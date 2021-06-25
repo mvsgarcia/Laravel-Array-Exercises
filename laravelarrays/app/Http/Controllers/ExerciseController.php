@@ -91,8 +91,8 @@ class ExerciseController extends Controller
         $arrayOdd = array();
 
         for($i=0; $i<1; $i++){
-            foreach($request->NUM as $num){
-                array_push($arrayNUM, $num);
+            foreach($request->num as $number){
+                array_push($arrayNUM, $number);
             }
         }
 
@@ -110,7 +110,34 @@ class ExerciseController extends Controller
         }
 
 
-        return view('exercises.show', compact('arrayInput', 'arrayInputA', 'arrayInputB', 'arrayReverseA', 'arrayReverseB', 'arrayEven', 'arrayOdd', 'PROD' ));
+        //================== Exercise 4 ==================
+
+        $arrayC = array();
+        $arrayStop = array();
+        $arrayMax = array();
+        $arrayMin = array();
+
+        //explode the inputs para maging array
+        //if key=>value = 0, then splice from there para mawala yung succeeding entries
+        //max() para makuha highest number
+        //min() para makuha lowest number
+
+        for($i=0; $i<1; $i++){
+            foreach($request->inputC as $inputc){
+                $arrayC = explode(" ", $inputc);
+            }
+        }
+
+        foreach ($arrayC as $k => $v) {
+            if ($v == 0) {
+                $arrayStop = array_splice($arrayC, $k);
+            }
+        }
+
+        $arrayMax = max($arrayC);
+        $arrayMin = min($arrayC);
+
+        return view('exercises.show', compact('arrayInput', 'arrayInputA', 'arrayInputB', 'arrayReverseA', 'arrayReverseB', 'arrayEven', 'arrayOdd', 'PROD', 'arrayC', 'arrayMax', 'arrayMin' ));
     }
 
 
