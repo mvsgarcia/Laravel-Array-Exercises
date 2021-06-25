@@ -38,6 +38,21 @@
                 <p>Input B-9: <input type="number" name="inputB[]"/> </p>
                 <p>Input B-10: <input type="number" name="inputB[]"/> </p>
 
+                <!-- Exercise 3 -->
+                <span class="mt-10 text-xl font-bold">Exercise 3: Input 10 integers for NUM</span>
+
+                <p>Input NUM-1: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-2: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-3: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-4: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-5: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-6: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-7: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-8: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-9: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-10: <input type="number" name="NUM[]"/> </p>
+
+
                 <input type="submit" name="submit" value="Submit" class="flex px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-gray-300">
             </form>
 

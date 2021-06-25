@@ -43,6 +43,16 @@
             <div class="gap-8">
                 <span class="text-xl font-bold mt-96">Exercise 3 Array Values</span>
                 
+                <div class="gap-5">
+                    <span class="text-lg font-bold text-red-500">Array with Even Indeces: </span>
+                    {{ print_r($arrayEven) }};
+                    <br>
+                    <span class="text-lg font-bold text-green-500">Array with Odd Indeces: </span>
+                    {{ print_r($arrayOdd) }};
+                    <br>
+                    <span class="text-lg font-bold text-blue-500">Product: </span>
+                    {{ print_r($PROD) }};
+                </div>
 
             </div>
         
