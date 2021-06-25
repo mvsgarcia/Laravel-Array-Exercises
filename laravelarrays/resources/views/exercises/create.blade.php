@@ -58,7 +58,7 @@
                 <p>Input C: <input type="text" name="inputC[]"/> </p>
 
 
-                <input type="submit" name="submit" value="Submit" class="flex px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-gray-300">
+                <input type="submit" name="submit" value="Submit" class="flex px-4 py-2 my-10 font-bold text-white bg-green-500 rounded hover:bg-gray-300">
             </form>
 
         </div>
