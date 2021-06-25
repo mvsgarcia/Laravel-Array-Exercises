@@ -85,12 +85,32 @@ class ExerciseController extends Controller
 
         //================== Exercise 3 ==================
 
+        $arrayNUM = array();
+        $PROD = array();
+        $arrayEven = array();
+        $arrayOdd = array();
+
+        for($i=0; $i<1; $i++){
+            foreach($request->NUM as $num){
+                array_push($arrayNUM, $num);
+            }
+        }
+
+        foreach ($arrayNUM as $k => $v) {
+            if ($k % 2 == 0) {
+                $arrayEven[] = $v;
+            }
+            else {
+                $arrayOdd[] = $v;
+            }
+        }
+
+        for ($i=0; $i < 5; $i++) {
+             $PROD[$i] = $arrayEven[$i] * $arrayOdd[$i];
+        }
 
 
-
-
-
-        return view('exercises.show', compact('arrayInput', 'arrayInputA', 'arrayInputB', 'arrayReverseA', 'arrayReverseB' ));
+        return view('exercises.show', compact('arrayInput', 'arrayInputA', 'arrayInputB', 'arrayReverseA', 'arrayReverseB', 'arrayEven', 'arrayOdd', 'PROD' ));
     }
 
 
