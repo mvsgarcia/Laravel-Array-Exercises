@@ -52,13 +52,13 @@ class ExerciseController extends Controller
 
         //================== Exercise 1 ==================
 
-        // $arrayInput = array();
+        $arrayInput = array();
 
-        // for($i=0; $i<2; $i++){
-        //     foreach($request->input as $input){
-        //         array_push($arrayInput, $input);
-        //     }
-        // }
+        for($i=0; $i<2; $i++){
+            foreach($request->input as $input){
+                array_push($arrayInput, $input);
+            }
+        }
        // dd($arrayInput);
 
 
@@ -71,18 +71,26 @@ class ExerciseController extends Controller
             foreach($request->inputA as $inputA){
                 array_push($arrayInputA, $inputA);
             }
-        
-        for($i=0; $i<1; $i++){
             foreach($request->inputB as $inputB){
                 array_push($arrayInputB, $inputB);
-            }
+             }
+        }
+
+        $arrayReverseA = array_reverse($arrayInputA);
+        $arrayReverseB = array_reverse($arrayInputB);
+
+        $arrayInputA = $arrayReverseB;
+        $arrayInputB = $arrayReverseA;
+
+
+        //================== Exercise 3 ==================
 
 
 
-       //dd($arrayInputA);
 
 
-        return view('exercises.show', compact('arrayInputA'));
+
+        return view('exercises.show', compact('arrayInput', 'arrayInputA', 'arrayInputB', 'arrayReverseA', 'arrayReverseB' ));
     }
 
 
