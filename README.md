@@ -16,5 +16,5 @@ Create a program that will input values to an array A[10] and array B[10]. Excha
 Create a program that will declare an array named NUM with 10 elements. Compute its product such that all elements in the odd subscripts will be your multiplicand and all the elements in the even subscript will be your multiplier. Place the product into the array named PROD with 5 elements and finally output the content of array PROD.
 
 **Exercise 4:**
-Create a program that will prompt the user to input numbers into array C and the input should be terminated by a zero sentinel. Output the contents of array C and also the highes and lowest number entered.
+Create a program that will prompt the user to input numbers into array C and the input should be terminated by a zero sentinel. Output the contents of array C and also the highest and lowest number entered.
 
