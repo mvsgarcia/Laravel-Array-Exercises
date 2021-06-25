@@ -41,16 +41,21 @@
                 <!-- Exercise 3 -->
                 <span class="mt-10 text-xl font-bold">Exercise 3: Input 10 integers for NUM</span>
 
-                <p>Input NUM-1: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-2: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-3: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-4: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-5: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-6: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-7: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-8: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-9: <input type="number" name="NUM[]"/> </p>
-                <p>Input NUM-10: <input type="number" name="NUM[]"/> </p>
+                <p>Input NUM-1: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-2: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-3: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-4: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-5: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-6: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-7: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-8: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-9: <input type="number" name="num[]"/> </p>
+                <p>Input NUM-10: <input type="number" name="num[]"/> </p>
+
+                <!-- Exercise 4 -->
+                <span class="mt-10 text-xl font-bold">Exercise 4: Input integers separated with spaces, and end with a 0 if done with inputs.</span>
+                
+                <p>Input C: <input type="text" name="inputC[]"/> </p>
 
 
                 <input type="submit" name="submit" value="Submit" class="flex px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-gray-300">

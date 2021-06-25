@@ -7,7 +7,10 @@
             <span class="text-xl font-bold mt-96">Exercise 1 Array Values</span>
               
             <div class="">
-                {{ print_r($arrayInput) }};
+                @foreach ($arrayInput as $input)
+                    {{ $input }};
+                @endforeach
+                
             </div>
 
         </div>
@@ -20,18 +23,30 @@
                 <span class="text-lg font-bold">Reversed</span>
                 <br>
                 <span class="text-lg font-bold text-red-500">Array A: </span>
-                {{ print_r($arrayReverseA) }};
+                    @foreach ($arrayReverseA as $input)
+                        {{ $input }};
+                    @endforeach
+                
                 <br>
                 <span class="text-lg font-bold text-green-500">Array B: </span>
-                {{ print_r($arrayReverseB) }};
+                    @foreach ($arrayReverseB as $input)
+                        {{ $input }};
+                    @endforeach
+                
                 <br>
                 <span class="text-lg font-bold">Swapped</span>
                 <br>
                 <span class="text-lg font-bold text-red-500">Array A: </span>
-                {{ print_r($arrayInputA) }};
+                    @foreach ($arrayInputA as $input)
+                        {{ $input }};
+                    @endforeach
+                
                 <br>
                 <span class="text-lg font-bold text-green-500">Array B: </span>
-                {{ print_r($arrayInputB) }};
+                    @foreach ($arrayInputB as $input)
+                        {{ $input }};
+                    @endforeach
+                
                 <br>
                 
                 
@@ -45,17 +60,50 @@
                 
                 <div class="gap-5">
                     <span class="text-lg font-bold text-red-500">Array with Even Indeces: </span>
-                    {{ print_r($arrayEven) }};
+                        @foreach ($arrayEven as $input)
+                            {{ $input }};
+                        @endforeach
+                    
                     <br>
                     <span class="text-lg font-bold text-green-500">Array with Odd Indeces: </span>
-                    {{ print_r($arrayOdd) }};
+                        @foreach ($arrayOdd as $input)
+                            {{ $input }};
+                        @endforeach
+                    
                     <br>
                     <span class="text-lg font-bold text-blue-500">Product: </span>
-                    {{ print_r($PROD) }};
+                        @foreach ($PROD as $input)
+                            {{ $input }};
+                        @endforeach
+                    
                 </div>
 
             </div>
         
+        
+        <!-- Exercise 4 -->
+        <div class="gap-8">
+                <span class="text-xl font-bold mt-96">Exercise 4 Array Values</span>
+                
+                <div class="gap-5">
+                    <span class="text-lg font-bold text-red-500">Array C: </span>
+                        @foreach ($arrayC as $input)
+                            {{ $input }};
+                        @endforeach
+                    
+                    <br>
+                    <span class="text-lg font-bold text-green-500">Highest number:  </span>
+                            {{ $arrayMax }};
+
+                    
+                    <br>
+                    <span class="text-lg font-bold text-blue-500">Lowest number:  </span>
+
+                            {{ $arrayMin }};
+                    
+                    <br>
+
+            </div>
             
 
         <!-- route back to index -->
