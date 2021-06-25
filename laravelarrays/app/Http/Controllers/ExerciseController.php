@@ -64,8 +64,7 @@ class ExerciseController extends Controller
 
        //================== Exercise 2 ==================
 
-       $arrayInputA = array();
-       $arrayInputB = array();
+       $arrayInputA = $arrayInputB = array();
 
         for($i=0; $i<1; $i++){
             foreach($request->inputA as $inputA){
@@ -85,10 +84,7 @@ class ExerciseController extends Controller
 
         //================== Exercise 3 ==================
 
-        $arrayNUM = array();
-        $PROD = array();
-        $arrayEven = array();
-        $arrayOdd = array();
+        $arrayNUM = $PROD =  $arrayEven = $arrayOdd = array();
 
         for($i=0; $i<1; $i++){
             foreach($request->num as $number){
@@ -112,15 +108,7 @@ class ExerciseController extends Controller
 
         //================== Exercise 4 ==================
 
-        $arrayC = array();
-        $arrayStop = array();
-        $arrayMax = array();
-        $arrayMin = array();
-
-        //explode the inputs para maging array
-        //if key=>value = 0, then splice from there para mawala yung succeeding entries
-        //max() para makuha highest number
-        //min() para makuha lowest number
+        $arrayC = $arrayStop = array();
 
         for($i=0; $i<1; $i++){
             foreach($request->inputC as $inputc){
